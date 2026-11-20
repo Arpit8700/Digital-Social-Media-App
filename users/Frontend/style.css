@@ -1,0 +1,111 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    background:#1877f2;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0d65d9;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    background:#1877f2;
+    color:white;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* Navbar buttons */
+.navbar button{
+    width:auto;
+    margin-left:10px;
+}
+
+/* Post Card */
+.post{
+    background:white;
+    padding:15px;
+    margin-top:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Textarea */
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+    resize:none;
+}
+
+/* Comments */
+.comment{
+    background:#eeeeee;
+    padding:8px;
+    margin-top:8px;
+    border-radius:5px;
+}
+
+/* Post Image */
+.post img{
+    width:100%;
+    margin-top:10px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .navbar button{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .post{
+        padding:10px;
+    }
+
+}

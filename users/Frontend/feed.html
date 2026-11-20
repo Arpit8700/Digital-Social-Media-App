@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Social Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <h2>Mini Social</h2>
+
+            <div>
+
+                <button onclick="window.location='profile.html'">
+                    👤 Profile
+                </button>
+
+                <button onclick="window.location='search.html'">
+                    🔍 Search
+                </button>
+
+                <button onclick="window.location='notifications.html'">
+                   🔔 Notifications
+                </button>
+
+                <button onclick="logout()">
+                    🚪 Logout
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Create Post -->
+
+        <h3>Create New Post</h3>
+
+        <input
+            type="file"
+            id="postImage">
+
+        <br><br>
+
+        <textarea
+            id="content"
+            placeholder="What's on your mind?"
+            rows="4">
+        </textarea>
+
+        <button onclick="createPost()">
+            📤 Create Post
+        </button>
+        
+        <div id="loading" style="display:none; color:blue; margin-top:10px;">
+         ⏳ Creating Post...
+        </div>
+
+        <hr>
+
+        <!-- All Posts -->
+
+        <div id="posts"></div>
+
+    </div>
+
+    <script src="feed.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>My Profile</h2>
+
+    <img
+    id="profileImage"
+    width="120"
+    height="120"
+    style="border-radius:50%; object-fit:cover; border:2px solid #1877f2;">
+
+    <br><br>
+
+    <h3 id="username"></h3>
+
+    <p id="bio"></p>
+
+    <p><b>Followers:</b> <span id="followers"></span></p>
+
+    <p><b>Following:</b> <span id="following"></span></p>
+
+    <p><b>Total Posts:</b> <span id="posts"></span></p>
+
+    <input
+    type="text"
+    id="newBio"
+    placeholder="Enter New Bio">
+
+    <input
+    type="file"
+    id="profilePic">
+
+    <br><br>
+
+    <button onclick="updateProfile()">
+    Update Profile
+    </button>
+
+    <button onclick="window.location='feed.html'">
+        Back to Feed
+    </button>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

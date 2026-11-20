@@ -1,0 +1,8 @@
+{
+  "name": "Mini Social",
+  "description": "A social media Android application for sharing posts and photos, liking, commenting, following users, searching profiles, and viewing real-time notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
